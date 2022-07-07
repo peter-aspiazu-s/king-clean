@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body{
+    position: relative;
+}
+
+@import './styles/app.scss';
+@import './styles/components/BarraSuperior.scss';
+@import './styles/components/MenuNavegacion.scss';
+@import './styles/components/SlideServicios.scss';
+@import'./styles/components/BarraLlamada.scss';
+@import './styles/components/Footer.scss';

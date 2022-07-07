@@ -1,0 +1,53 @@
+.barra-superior{
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    background-color: #01b7b7;
+    grid-gap: 10px;
+
+    .barra-superior__slogan h3{
+        text-align: center;
+        color: white;
+    }
+    .barra-superior__redes{
+        display: flex;
+        justify-content: space-around;
+
+        a{
+            font-size: 30px;
+            color: white;
+        }
+        a:hover{
+            transform: scale(1.1);
+            transition: transform .3s;
+        }
+    }
+}
+
+@media screen and (min-width: 400px){
+    .barra-superior{
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .barra-superior{
+        grid-template-columns: repeat(2, 1fr);
+
+        .barra-superior__slogan{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 900px){
+    .barra-superior{
+        height: 70px;
+
+        .barra-superior__redes{
+            align-items: center;
+        }
+    }
+}

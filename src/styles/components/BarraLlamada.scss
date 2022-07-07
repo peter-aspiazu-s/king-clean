@@ -1,0 +1,55 @@
+.barra-llamada{
+    width: 100%;
+    background-color: #01b7b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+
+    .barra-llamada__p{
+        p {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+    } 
+    
+
+    .barra-llamada__a{
+        margin-top: 30px;
+        text-align: center;
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+            background-color: #00dd93;
+            cursor: pointer;
+        }
+        a:hover {
+            transform: scale(1.1);
+            box-shadow: 1px 1px 1px 1px #333;
+            transition: transform .3s, box-shadow .3s;
+        }
+    } 
+}
+
+@media screen and (min-width: 900px){
+    .barra-llamada{
+        padding: 20px 10px;
+    
+        .barra-llamada__p{
+            p {
+                font-size: 25px;
+            }
+        } 
+        
+    
+        .barra-llamada__a{
+            a {
+                font-size: 25px;
+            }
+        } 
+    }
+}

@@ -1,0 +1,134 @@
+.swiper-container{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .swiper__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        img{
+            width: 90vw;
+            height: 250px;
+            box-shadow: 3px 3px 5px 3px #333;
+            object-fit: fill;
+        }
+        a{
+            position: absolute;
+            left: 10%;
+            background-color: #01b7b7;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px #333;
+        }
+        a:hover{
+            transform: scale(1.1);
+            transition: transform .3s;
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .swiper-container{
+    
+        .swiper__img{
+        
+            img{
+                width: 90vw;
+                height: 270px;
+            }
+
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+    .swiper-container{
+        height: 60vh;
+        .swiper__img{
+        
+            img{
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    .swiper-container{
+        height: 70vh;
+        .swiper__img{
+        
+            img{
+                height: 320px;
+            }
+
+            a{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px){
+    .swiper-container{
+        .swiper__img{
+        
+            img{
+                width: 80vw;
+            }
+
+            a{
+                left: 13%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px){
+    .swiper-container{
+
+        .swiper__img{
+        
+            img{
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .swiper-container{
+
+        .swiper__img{
+        
+            img{
+                height: 370px;
+            }
+
+            a{
+                left: 20%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .swiper-container{
+
+        .swiper__img{
+        
+            img{
+                width: 68vw;
+                height: auto;
+            }
+        }
+    }
+}

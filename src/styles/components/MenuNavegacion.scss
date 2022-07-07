@@ -1,0 +1,130 @@
+.menu-navegacion{
+    padding: 20px 0;
+    background-color: #00dd93;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .menu-navegacion__logo{
+        margin-bottom: 20px;
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        a:hover{
+            transform: scale(1.1);
+            transition: transform .3s;
+        }
+    }
+
+    .menu-navegacion__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        i{
+            font-size: 25px;
+            cursor: pointer;
+            color: azure;
+        }
+        i:hover{
+            transform: scale(1.1);
+            transition: transform .3s;
+        }
+        .menu-navegacion__ul{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 20px;
+
+            a{
+                text-align: center;
+                padding: 10px 20px;
+                width: 100%;
+                border: 1px solid white;
+                color: white;
+            }
+            a:hover{
+                transform: scale(1.1);
+                color: #00dd93;
+                background-color: white;
+                transition: all .3s;
+            }
+        }
+        .hidden-menu {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+    .menu-navegacion{
+        .menu-navegacion__menu {
+            i{
+                font-size: 30px;
+            }
+            .menu-navegacion__ul{
+    
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px){
+    .menu-navegacion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        position: sticky;
+        top: 0;
+        padding: 20px 10px;
+
+        .menu-navegacion__logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .menu-navegacion__menu {
+            
+            i{
+                display: none;
+            }
+            .menu-navegacion__ul{
+                margin-top: 0px;
+                width: 100%;
+    
+                a{
+                    border: 0;
+                }
+            }
+            .hidden-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px){
+    .menu-navegacion{
+        grid-gap: 5px;
+
+        .menu-navegacion__menu {
+            padding: 0 10px;
+        }
+    }
+}
