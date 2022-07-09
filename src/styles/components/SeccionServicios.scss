@@ -1,0 +1,74 @@
+.seccion-servicios {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .seccion-servicios__title {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .seccion-servicios__container {
+        width: 100%;
+
+        .seccion-servicios__servicio{
+            width: 100%;
+            border: 5px solid #01b7b7;
+            border-radius: 10px;
+            background-color: #00dd93;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 2px 1px #ccc;
+
+            h3{
+                color: white;
+                margin-bottom: 10px;
+            }
+            img{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            a{
+                display: inline-block;
+                color: white;
+                padding: 10px 20px;
+                background-color: #01b7b7;
+                cursor: pointer;
+            }
+            a:hover{
+                transform: scale(1.1);
+                transition: transform .3s;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .seccion-servicios {
+        width: 90%;
+
+        .seccion-servicios__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+
+            .seccion-servicios__servicio{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px){
+    .seccion-servicios {
+
+        .seccion-servicios__container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
