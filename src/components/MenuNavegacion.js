@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 export const MenuNavegacion = () => {
 
@@ -8,8 +9,9 @@ export const MenuNavegacion = () => {
     const handleMenu = () => {
         setMenu(!menu);
     }
-
-    const handleClickSubMenu = () => {
+    
+    const handleClickSubMenu = (e) => {
+        e.preventDefault();
         setSubMenu(!subMenu);
     }
 
@@ -27,8 +29,14 @@ export const MenuNavegacion = () => {
                         menu ? 'menu-navegacion__ul animate__animated animate__bounceInLeft'
                         : 'menu-navegacion__ul hidden-menu' 
                     }>
-                    <a href="#">Inicio</a>
-                    <a href="#">Nosotros</a>
+                    <Link 
+                        to="/"
+                        onClick={handleMenu}    
+                    >Inicio</Link>
+                    <Link 
+                        to="nosotros"
+                        onClick={handleMenu}
+                    >Nosotros</Link>
                     <a 
                         href="#"
                         onClick={handleClickSubMenu}
@@ -36,14 +44,17 @@ export const MenuNavegacion = () => {
                     <div className={
                             subMenu ? 'submenu-visible animate__animated animate__backInLeft' : 'hidden-submenu'
                         }>
-                        <a href="#">Lavado de Muebles</a>
-                        <a href="#">Lavado de Colchones</a>
-                        <a href="#">Lavado de Vehiculos</a>
-                        <a href="#">Lavado de Alfombras</a>
-                        <a href="#">Lavado de Sillas</a>
+                        <a href="#" onClick={handleMenu}>Lavado de Muebles</a>
+                        <a href="#" onClick={handleMenu}>Lavado de Colchones</a>
+                        <a href="#" onClick={handleMenu}>Lavado de Vehiculos</a>
+                        <a href="#" onClick={handleMenu}>Lavado de Alfombras</a>
+                        <a href="#" onClick={handleMenu}>Lavado de Sillas</a>
                     </div>
-                    <a href="#">Testimonios</a>
-                    <a href="#">Contactos</a>
+                    <Link 
+                        to="testimonios" 
+                        onClick={handleMenu}
+                    >Testimonios</Link>
+                    <a href="#" onClick={handleMenu}>Contactos</a>
                 </div>
             </div>
         </div>

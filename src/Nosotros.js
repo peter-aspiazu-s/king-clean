@@ -1,23 +1,20 @@
 import { BarraLlamada } from "./components/BarraLlamada"
-import { BarraSuperior } from "./components/BarraSuperior"
 import { BotonWhatsapp } from "./components/BotonWhatsapp"
-import { Footer } from "./components/Footer"
-import { MenuNavegacion } from "./components/MenuNavegacion"
+import { Miembros } from "./components/Miembros"
+import { ResumenEmpresa } from "./components/ResumenEmpresa"
 import { SeccionInteres } from "./components/SeccionInteres"
 import { SeccionServicios } from "./components/SeccionServicios"
-import { SlideServicios } from "./components/SlideServicios"
 
-export const App = () => {
+export const Nosotros = () => {
     return(
         <>
-            <BarraSuperior />
-            <MenuNavegacion />
-            <SlideServicios />
+            <ResumenEmpresa />
+            <Miembros />
             <BarraLlamada />
             <SeccionServicios />
             <BarraLlamada />
             <SeccionInteres />
-            <Footer />
+            {/* <Footer /> */}
             <BotonWhatsapp />
         </>
     )

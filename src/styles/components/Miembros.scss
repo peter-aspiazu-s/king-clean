@@ -1,0 +1,108 @@
+.miembros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    .miembros__card{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #00dd93;
+        box-shadow: 2px 2px 2px 1px #ccc;
+        border-radius: 10px;
+
+        .miembros__caja-img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            img{
+                width: 100%;
+            }
+            img:hover{
+                transform: scale(1.2);
+                transition: transform .3s;
+            }
+        }
+
+        h3{
+            color: white;
+            margin-bottom: 20px;
+        }
+        span{
+            color: white;
+            margin-bottom: 20px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .miembros {
+    
+        .miembros__card{
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+    .miembros {
+    
+        .miembros__card{
+            width: 75%;
+
+            h3{
+                font-size: 20px;
+            }
+            span{
+                font-size: 18px;
+            }
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    .miembros {
+    
+        .miembros__card{
+            width: 65%;
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+    .miembros {
+    
+        .miembros__card{
+            width: 55%;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .miembros {
+    
+        .miembros__card{
+            width: 45%;
+        }
+    }
+}
