@@ -1,16 +1,14 @@
 import { BarraLlamada } from "./components/BarraLlamada"
-import { ResumenTestimonio } from "./components/ResumenTestimonio"
+import { InformacionContactos } from "./components/InformacionContactos"
+import { ResumenContactos } from "./components/ResumenContactos"
 import { SeccionInteres } from "./components/SeccionInteres"
 import { SeccionServicios } from "./components/SeccionServicios"
-import { TestimoniosVideos } from "./components/TestimoniosVideos"
-import { TrabajosRealizados } from "./components/TrabajosRealizados"
 
-export const Testimonios = () => {
+export const Contactos = () => {
     return(
         <>
-            <ResumenTestimonio />
-            <TestimoniosVideos />
-            <TrabajosRealizados />
+            <ResumenContactos />
+            <InformacionContactos />
             <BarraLlamada />
             <SeccionServicios />
             <BarraLlamada />

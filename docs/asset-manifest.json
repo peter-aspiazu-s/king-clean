@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ba35155.css",
-    "main.js": "/static/js/main.32e95b00.js",
+    "main.css": "/static/css/main.2b56b106.css",
+    "main.js": "/static/js/main.d4646c4a.js",
     "static/media/fondo-azul.webp": "/static/media/fondo-azul.3c4ccf453070f92b7905.webp",
+    "static/media/testimonios-fondo.webp": "/static/media/testimonios-fondo.f2e69c8965e8cc05df78.webp",
+    "static/media/nosotros-fondo.webp": "/static/media/nosotros-fondo.e69c6a3296b30635e1eb.webp",
+    "static/media/contactos-fondo.webp": "/static/media/contactos-fondo.b4b3048344ea7829994e.webp",
     "index.html": "/index.html",
-    "main.4ba35155.css.map": "/static/css/main.4ba35155.css.map",
-    "main.32e95b00.js.map": "/static/js/main.32e95b00.js.map"
+    "main.2b56b106.css.map": "/static/css/main.2b56b106.css.map",
+    "main.d4646c4a.js.map": "/static/js/main.d4646c4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ba35155.css",
-    "static/js/main.32e95b00.js"
+    "static/css/main.2b56b106.css",
+    "static/js/main.d4646c4a.js"
   ]
 }

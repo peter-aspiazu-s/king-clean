@@ -1,19 +1,36 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 
 export const MenuNavegacion = () => {
 
     const [menu, setMenu] = useState(false);
     const [subMenu, setSubMenu] = useState(false);
+    const [width, setWidth] = useState(window.innerWidth);
 
+    
     const handleMenu = () => {
-        setMenu(!menu);
+        if(width < 800){
+            setMenu(!menu);
+        }
     }
     
     const handleClickSubMenu = (e) => {
         e.preventDefault();
         setSubMenu(!subMenu);
     }
+
+    const cambiarTamaño = () => {
+        setWidth(window.innerWidth);
+        console.log(width)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', cambiarTamaño);
+
+        return () => {
+            window.removeEventListener('resize', cambiarTamaño);
+        }
+    })
 
     return(
         <div className="menu-navegacion">
@@ -30,11 +47,11 @@ export const MenuNavegacion = () => {
                         : 'menu-navegacion__ul hidden-menu' 
                     }>
                     <Link 
-                        to="/"
+                        to="/king-clean/"
                         onClick={handleMenu}    
                     >Inicio</Link>
                     <Link 
-                        to="nosotros"
+                        to="/king-clean/nosotros"
                         onClick={handleMenu}
                     >Nosotros</Link>
                     <a 
@@ -51,10 +68,13 @@ export const MenuNavegacion = () => {
                         <a href="#" onClick={handleMenu}>Lavado de Sillas</a>
                     </div>
                     <Link 
-                        to="testimonios" 
+                        to="/king-clean/testimonios" 
                         onClick={handleMenu}
                     >Testimonios</Link>
-                    <a href="#" onClick={handleMenu}>Contactos</a>
+                    <Link 
+                        to="/king-clean/contactos" 
+                        onClick={handleMenu}
+                    >Contactos</Link>
                 </div>
             </div>
         </div>

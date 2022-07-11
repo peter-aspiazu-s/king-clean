@@ -8,7 +8,6 @@ body{
     position: relative;
 }
 
-@import './styles/app.scss';
 @import './styles/components/BarraSuperior.scss';
 @import './styles/components/MenuNavegacion.scss';
 @import './styles/components/SlideServicios.scss';
@@ -22,3 +21,6 @@ body{
 @import './styles/components/ResumenTestimonio.scss';
 @import './styles/components/TrabajosRealizados.scss';
 @import './styles/components/Paginacion.scss';
+@import './styles/components/TestimoniosVideos.scss';
+@import './styles/components/ResumenContactos.scss';
+@import './styles/components/InformacionContactos.scss';

@@ -7,13 +7,13 @@ export const SeccionInteres = () => {
     const handleClickRedirec = (e) => {
         e.preventDefault()
         if(e.target.textContent === 'Ir a Nosotros'){
-            navigate("/nosotros", { replace: true });
+            navigate("/king-clean/nosotros", { replace: true });
         }
         if(e.target.textContent === 'Ir a Testimonios'){
-            navigate("/testimonios", { replace: true });
+            navigate("/king-clean/testimonios", { replace: true });
         }
         if(e.target.textContent === 'Ir a Contactos'){
-            navigate("/contactos", { replace: true });
+            navigate("/king-clean/contactos", { replace: true });
         }
     }
 

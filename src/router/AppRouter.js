@@ -6,6 +6,7 @@ import { MenuNavegacion } from "../components/MenuNavegacion"
 import { Nosotros } from "../Nosotros"
 import { Testimonios } from "../Testimonios"
 import { BotonWhatsapp } from "../components/BotonWhatsapp"
+import { Contactos } from "../Contactos"
 
 export const AppRouter = () => {
     return(
@@ -14,9 +15,10 @@ export const AppRouter = () => {
             <MenuNavegacion />
 
             <Routes>
-                <Route path="/" element={<Inicio />} />
-                <Route path="/nosotros" element={<Nosotros />} />
-                <Route path="/testimonios" element={<Testimonios />} />
+                <Route path="/king-clean/" element={<Inicio />} />
+                <Route path="/king-clean/nosotros" element={<Nosotros />} />
+                <Route path="/king-clean/testimonios" element={<Testimonios />} />
+                <Route path="/king-clean/contactos" element={<Contactos />} />
             </Routes>
 
             <BotonWhatsapp />

@@ -33,11 +33,11 @@ export const Footer = () => {
             <div className="footer__secciones">
                 <ul>
                     <h2>MENU</h2>
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="nosotros">Nosotros</Link></li>
+                    <li><Link to="/king-clean/">Inicio</Link></li>
+                    <li><Link to="/king-clean/nosotros">Nosotros</Link></li>
                     {/* <li><a href="#">Servicios</a></li> */}
-                    <li><Link to="testimonios">Testimonios</Link></li>
-                    <li><a href="#">Contactos</a></li>
+                    <li><Link to="/king-clean/testimonios">Testimonios</Link></li>
+                    <li><Link to="/king-clean/contactos">Contactos</Link></li>
                 </ul>
             </div>
             <div className="footer__desarrollador">
