@@ -1,4 +1,29 @@
+import { useNavigate } from "react-router-dom";
+
 export const SeccionServicios = () => {
+
+    let navigate = useNavigate();
+
+    const handleClickRedirec = (e) => {
+        e.preventDefault();
+
+        if(e.target.dataset.servicios === 'muebles'){
+            navigate("/lavado-muebles", { replace: true });
+        }
+        if(e.target.dataset.servicios === 'colchones'){
+            navigate("/lavado-colchones", { replace: true });
+        }
+        if(e.target.dataset.servicios === 'vehiculos'){
+            navigate("/lavado-vehiculos", { replace: true });
+        }
+        if(e.target.dataset.servicios === 'alfombras'){
+            navigate("/lavado-alfombras", { replace: true });
+        }
+        if(e.target.dataset.servicios === 'sillas'){
+            navigate("/lavado-sillas", { replace: true });
+        }
+    }
+
     return(
         <div className="seccion-servicios">
             <h3 className="seccion-servicios__title">Acceso Rápido a Servicios</h3>
@@ -6,27 +31,42 @@ export const SeccionServicios = () => {
                 <div className="seccion-servicios__servicio">
                     <h3>Lavado de Muebles</h3>
                     <img src="./assets/img/limpieza-muebles-img.webp" />
-                    <a>Ver Más</a>
+                    <a 
+                        data-servicios="muebles"
+                        onClick={handleClickRedirec}
+                    >Ver Más</a>
                 </div>
                 <div className="seccion-servicios__servicio">
                     <h3>Lavado de Colchones</h3>
                     <img src="./assets/img/limpieza-colchones-img.webp" />
-                    <a>Ver Más</a>
+                    <a
+                        data-servicios="colchones"
+                        onClick={handleClickRedirec}
+                    >Ver Más</a>
                 </div>
                 <div className="seccion-servicios__servicio">
                     <h3>Lavado de Vehículos</h3>
                     <img src="./assets/img/limpieza-vehiculos-img.webp" />
-                    <a>Ver Más</a>
+                    <a
+                        data-servicios="vehiculos"
+                        onClick={handleClickRedirec}
+                    >Ver Más</a>
                 </div>
                 <div className="seccion-servicios__servicio">
                     <h3>Lavado de Alfombras</h3>
                     <img src="./assets/img/limpieza-alfombras-img.webp" />
-                    <a>Ver Más</a>
+                    <a
+                        data-servicios="alfombras"
+                        onClick={handleClickRedirec}
+                    >Ver Más</a>
                 </div>
                 <div className="seccion-servicios__servicio">
                     <h3>Lavado de Sillas</h3>
                     <img src="./assets/img/limpieza-sillas-img.webp" />
-                    <a>Ver Más</a>
+                    <a
+                        data-servicios="sillas"
+                        onClick={handleClickRedirec}
+                    >Ver Más</a>
                 </div>
                 
             </div>

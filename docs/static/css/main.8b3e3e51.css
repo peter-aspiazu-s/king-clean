@@ -1448,6 +1448,519 @@ body {
     }
 }
 
+.resumen-lavado-muebles {
+    align-items: center;
+    background-image: url(../../assets/img/muebles-fondo.webp);
+    background-position: 50%;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px
+}
+
+.resumen-lavado-muebles h3 {
+    margin-bottom: 20px
+}
+
+.resumen-lavado-muebles p {
+    margin-bottom: 20px;
+    text-align: justify
+}
+
+.resumen-lavado-muebles a {
+    background-color: #00dd93;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none
+}
+
+.resumen-lavado-muebles a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .3s
+}
+
+@media screen and (min-width:400px) {
+    .resumen-lavado-muebles {
+        padding: 30px 20px
+    }
+}
+
+@media screen and (min-width:500px) {
+    .resumen-lavado-muebles {
+        padding: 40px 20px
+    }
+
+    .resumen-lavado-muebles h3 {
+        font-size: 25px
+    }
+}
+
+@media screen and (min-width:600px) {
+    .resumen-lavado-muebles {
+        padding: 50px 30px
+    }
+}
+
+@media screen and (min-width:700px) {
+    .resumen-lavado-muebles {
+        padding: 50px 30px
+    }
+
+    .resumen-lavado-muebles h3 {
+        font-size: 30px
+    }
+
+    .resumen-lavado-muebles p {
+        font-size: 18px
+    }
+
+    .resumen-lavado-muebles a {
+        font-size: 20px
+    }
+
+    .resumen-lavado-muebles {
+        padding: 80px 30px
+    }
+
+    .resumen-lavado-muebles h3,
+    .resumen-lavado-muebles p {
+        margin-bottom: 30px
+    }
+
+    .resumen-lavado-muebles p {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width:900px) {
+    .resumen-lavado-muebles {
+        padding: 100px 30px
+    }
+
+    .resumen-lavado-muebles h3,
+    .resumen-lavado-muebles p {
+        margin-bottom: 40px
+    }
+}
+
+.resumen-lavado-colchones {
+    align-items: center;
+    background-image: url(../../assets/img/colchones-fondo.webp);
+    background-position: 50%;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px
+}
+
+.resumen-lavado-colchones h3 {
+    margin-bottom: 20px
+}
+
+.resumen-lavado-colchones p {
+    margin-bottom: 20px;
+    text-align: justify
+}
+
+.resumen-lavado-colchones a {
+    background-color: #00dd93;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none
+}
+
+.resumen-lavado-colchones a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .3s
+}
+
+@media screen and (min-width:400px) {
+    .resumen-lavado-colchones {
+        padding: 30px 20px
+    }
+}
+
+@media screen and (min-width:500px) {
+    .resumen-lavado-colchones {
+        padding: 40px 20px
+    }
+
+    .resumen-lavado-colchones h3 {
+        font-size: 25px
+    }
+}
+
+@media screen and (min-width:600px) {
+    .resumen-lavado-colchones {
+        padding: 50px 30px
+    }
+}
+
+@media screen and (min-width:700px) {
+    .resumen-lavado-colchones {
+        padding: 50px 30px
+    }
+
+    .resumen-lavado-colchones h3 {
+        font-size: 30px
+    }
+
+    .resumen-lavado-colchones p {
+        font-size: 18px
+    }
+
+    .resumen-lavado-colchones a {
+        font-size: 20px
+    }
+
+    .resumen-lavado-colchones {
+        padding: 80px 30px
+    }
+
+    .resumen-lavado-colchones h3,
+    .resumen-lavado-colchones p {
+        margin-bottom: 30px
+    }
+
+    .resumen-lavado-colchones p {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width:900px) {
+    .resumen-lavado-colchones {
+        padding: 100px 30px
+    }
+
+    .resumen-lavado-colchones h3,
+    .resumen-lavado-colchones p {
+        margin-bottom: 40px
+    }
+}
+
+.resumen-lavado-vehiculos {
+    align-items: center;
+    background-image: url(../../assets/img/coches-fondo.webp);
+    background-position: 50%;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px
+}
+
+.resumen-lavado-vehiculos h3 {
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.resumen-lavado-vehiculos p {
+    margin-bottom: 20px;
+    text-align: justify
+}
+
+.resumen-lavado-vehiculos a {
+    background-color: #00dd93;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none
+}
+
+.resumen-lavado-vehiculos a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .3s
+}
+
+@media screen and (min-width:400px) {
+    .resumen-lavado-vehiculos {
+        padding: 30px 20px
+    }
+}
+
+@media screen and (min-width:500px) {
+    .resumen-lavado-vehiculos {
+        padding: 40px 20px
+    }
+
+    .resumen-lavado-vehiculos h3 {
+        font-size: 25px
+    }
+}
+
+@media screen and (min-width:600px) {
+    .resumen-lavado-vehiculos {
+        padding: 50px 30px
+    }
+}
+
+@media screen and (min-width:700px) {
+    .resumen-lavado-vehiculos {
+        padding: 50px 30px
+    }
+
+    .resumen-lavado-vehiculos h3 {
+        font-size: 30px
+    }
+
+    .resumen-lavado-vehiculos p {
+        font-size: 18px
+    }
+
+    .resumen-lavado-vehiculos a {
+        font-size: 20px
+    }
+
+    .resumen-lavado-vehiculos {
+        padding: 80px 30px
+    }
+
+    .resumen-lavado-vehiculos h3,
+    .resumen-lavado-vehiculos p {
+        margin-bottom: 30px
+    }
+
+    .resumen-lavado-vehiculos p {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width:900px) {
+    .resumen-lavado-vehiculos {
+        padding: 100px 30px
+    }
+
+    .resumen-lavado-vehiculos h3,
+    .resumen-lavado-vehiculos p {
+        margin-bottom: 40px
+    }
+}
+
+.resumen-lavado-alfombras {
+    align-items: center;
+    background-image: url(../../assets/img/alfombras-fondo.webp);
+    background-position: 50%;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px
+}
+
+.resumen-lavado-alfombras h3 {
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.resumen-lavado-alfombras p {
+    margin-bottom: 20px;
+    text-align: justify
+}
+
+.resumen-lavado-alfombras a {
+    background-color: #00dd93;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none
+}
+
+.resumen-lavado-alfombras a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .3s
+}
+
+@media screen and (min-width:400px) {
+    .resumen-lavado-alfombras {
+        padding: 30px 20px
+    }
+}
+
+@media screen and (min-width:500px) {
+    .resumen-lavado-alfombras {
+        padding: 40px 20px
+    }
+
+    .resumen-lavado-alfombras h3 {
+        font-size: 25px
+    }
+}
+
+@media screen and (min-width:600px) {
+    .resumen-lavado-alfombras {
+        padding: 50px 30px
+    }
+}
+
+@media screen and (min-width:700px) {
+    .resumen-lavado-alfombras {
+        padding: 50px 30px
+    }
+
+    .resumen-lavado-alfombras h3 {
+        font-size: 30px
+    }
+
+    .resumen-lavado-alfombras p {
+        font-size: 18px
+    }
+
+    .resumen-lavado-alfombras a {
+        font-size: 20px
+    }
+
+    .resumen-lavado-alfombras {
+        padding: 80px 30px
+    }
+
+    .resumen-lavado-alfombras h3,
+    .resumen-lavado-alfombras p {
+        margin-bottom: 30px
+    }
+
+    .resumen-lavado-alfombras p {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width:900px) {
+    .resumen-lavado-alfombras {
+        padding: 100px 30px
+    }
+
+    .resumen-lavado-alfombras h3,
+    .resumen-lavado-alfombras p {
+        margin-bottom: 40px
+    }
+}
+
+.resumen-lavado-sillas {
+    align-items: center;
+    background-image: url(../../assets/img/sillas-fondo.webp);
+    background-position: 50%;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px
+}
+
+.resumen-lavado-sillas h3 {
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.resumen-lavado-sillas p {
+    margin-bottom: 20px;
+    text-align: justify
+}
+
+.resumen-lavado-sillas a {
+    background-color: #00dd93;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none
+}
+
+.resumen-lavado-sillas a:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .3s
+}
+
+@media screen and (min-width:400px) {
+    .resumen-lavado-sillas {
+        padding: 30px 20px
+    }
+}
+
+@media screen and (min-width:500px) {
+    .resumen-lavado-sillas {
+        padding: 40px 20px
+    }
+
+    .resumen-lavado-sillas h3 {
+        font-size: 25px
+    }
+}
+
+@media screen and (min-width:600px) {
+    .resumen-lavado-sillas {
+        padding: 50px 30px
+    }
+}
+
+@media screen and (min-width:700px) {
+    .resumen-lavado-sillas {
+        padding: 50px 30px
+    }
+
+    .resumen-lavado-sillas h3 {
+        font-size: 30px
+    }
+
+    .resumen-lavado-sillas p {
+        font-size: 18px
+    }
+
+    .resumen-lavado-sillas a {
+        font-size: 20px
+    }
+
+    .resumen-lavado-sillas {
+        padding: 80px 30px
+    }
+
+    .resumen-lavado-sillas h3,
+    .resumen-lavado-sillas p {
+        margin-bottom: 30px
+    }
+
+    .resumen-lavado-sillas p {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width:900px) {
+    .resumen-lavado-sillas {
+        padding: 100px 30px
+    }
+
+    .resumen-lavado-sillas h3,
+    .resumen-lavado-sillas p {
+        margin-bottom: 40px
+    }
+}
+
 @font-face {
     font-family: swiper-icons;
     font-style: normal;
@@ -1918,4 +2431,4 @@ button.swiper-pagination-bullet {
     display: none
 }
 
-/*# sourceMappingURL=main.2b56b106.css.map*/
+/*# sourceMappingURL=main.8b3e3e51.css.map*/
