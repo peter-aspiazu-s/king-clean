@@ -20,15 +20,15 @@ export const AppRouter = () => {
             <MenuNavegacion />
 
             <Routes>
-                <Route path="/" element={<Inicio />} />
-                <Route path="/nosotros" element={<Nosotros />} />
-                <Route path="/testimonios" element={<Testimonios />} />
-                <Route path="/contactos" element={<Contactos />} />
-                <Route path="/lavado-muebles" element={<LavadoMuebles />} />
-                <Route path="/lavado-colchones" element={<LavadoColchones />} />
-                <Route path="/lavado-vehiculos" element={<LavadoVehiculos />} />
-                <Route path="/lavado-alfombras" element={<LavadoAlfombras />} />
-                <Route path="/lavado-sillas" element={<LavadoSillas />} />
+                <Route path="/king-clean/nosotros" element={<Nosotros />} />
+                <Route path="/king-clean/testimonios" element={<Testimonios />} />
+                <Route path="/king-clean/contactos" element={<Contactos />} />
+                <Route path="/king-clean/lavado-muebles" element={<LavadoMuebles />} />
+                <Route path="/king-clean/lavado-colchones" element={<LavadoColchones />} />
+                <Route path="/king-clean/lavado-vehiculos" element={<LavadoVehiculos />} />
+                <Route path="/king-clean/lavado-alfombras" element={<LavadoAlfombras />} />
+                <Route path="/king-clean/lavado-sillas" element={<LavadoSillas />} />
+                <Route exact path="/king-clean" element={<Inicio />} />
             </Routes>
 
             <BotonWhatsapp />

@@ -8,19 +8,19 @@ export const SeccionServicios = () => {
         e.preventDefault();
 
         if(e.target.dataset.servicios === 'muebles'){
-            navigate("/lavado-muebles", { replace: true });
+            navigate("king-clean/lavado-muebles", { replace: true });
         }
         if(e.target.dataset.servicios === 'colchones'){
-            navigate("/lavado-colchones", { replace: true });
+            navigate("king-clean/lavado-colchones", { replace: true });
         }
         if(e.target.dataset.servicios === 'vehiculos'){
-            navigate("/lavado-vehiculos", { replace: true });
+            navigate("king-clean/lavado-vehiculos", { replace: true });
         }
         if(e.target.dataset.servicios === 'alfombras'){
-            navigate("/lavado-alfombras", { replace: true });
+            navigate("king-clean/lavado-alfombras", { replace: true });
         }
         if(e.target.dataset.servicios === 'sillas'){
-            navigate("/lavado-sillas", { replace: true });
+            navigate("king-clean/lavado-sillas", { replace: true });
         }
     }
 
