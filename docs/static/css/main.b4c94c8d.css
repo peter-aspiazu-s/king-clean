@@ -143,6 +143,24 @@ body {
     transition: all .3s
 }
 
+.menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .item-servicios {
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%
+}
+
+.menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .item-servicios:hover {
+    background-color: #fff;
+    color: #00dd93;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .3s
+}
+
 .menu-navegacion .menu-navegacion__menu .hidden-menu,
 .menu-navegacion .menu-navegacion__menu .hidden-submenu {
     display: none
@@ -162,6 +180,7 @@ body {
         font-size: 30px
     }
 
+    .menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .item-servicios,
     .menu-navegacion .menu-navegacion__menu .menu-navegacion__ul a {
         font-size: 20px
     }
@@ -198,6 +217,11 @@ body {
 
     .menu-navegacion .menu-navegacion__menu .menu-navegacion__ul a {
         border: 0
+    }
+
+    .menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .item-servicios {
+        border: 0;
+        display: inline
     }
 
     .menu-navegacion .menu-navegacion__menu .hidden-menu {
@@ -240,6 +264,20 @@ body {
 
     .menu-navegacion .menu-navegacion__menu .submenu-visible {
         right: 250px
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .menu-navegacion {
+        grid-gap: 5px
+    }
+
+    .menu-navegacion .menu-navegacion__menu {
+        padding: 0 10px
+    }
+
+    .menu-navegacion .menu-navegacion__menu .submenu-visible {
+        right: 320px
     }
 }
 
@@ -338,6 +376,30 @@ body {
 
     .swiper-container .swiper__img a {
         left: 20%
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .swiper-container .swiper__img img {
+        height: auto;
+        width: 68vw
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .swiper-container {
+        height: 80vh
+    }
+
+    .swiper-container .swiper__img img {
+        height: auto;
+        width: 68vw
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .swiper-container {
+        height: 85vh
     }
 
     .swiper-container .swiper__img img {
@@ -2431,4 +2493,4 @@ button.swiper-pagination-bullet {
     display: none
 }
 
-/*# sourceMappingURL=main.8b3e3e51.css.map*/
+/*# sourceMappingURL=main.b4c94c8d.css.map*/

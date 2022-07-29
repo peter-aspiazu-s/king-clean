@@ -33,7 +33,7 @@ export const MenuNavegacion = () => {
     return(
         <div className="menu-navegacion">
             <div className="menu-navegacion__logo animate__animated animate__bounceInLeft">
-                <a href="#">King Clean</a>
+                <Link to="/" >King Clean</Link>
             </div>
             <div className="menu-navegacion__menu animate__animated animate__bounceInLeft">
                 <i 
@@ -45,32 +45,32 @@ export const MenuNavegacion = () => {
                         : 'menu-navegacion__ul hidden-menu' 
                     }>
                     <Link 
-                        to="king-clean/"
+                        to="/"
                         onClick={handleMenu}    
                     >Inicio</Link>
                     <Link 
-                        to="king-clean/nosotros"
+                        to="nosotros"
                         onClick={handleMenu}
                     >Nosotros</Link>
-                    <a 
-                        href="#"
+                    <div 
+                        className="item-servicios"
                         onClick={handleClickSubMenu}
-                    >Servicios</a>
+                    >Servicios</div>
                     <div className={
                             subMenu ? 'submenu-visible animate__animated animate__backInLeft' : 'hidden-submenu'
                         }>
-                        <Link to="king-clean/lavado-muebles" onClick={handleClickSubMenu}>Lavado de Muebles</Link>
-                        <Link to="king-clean/lavado-colchones" onClick={handleClickSubMenu}>Lavado de Colchones</Link>
-                        <Link to="king-clean/lavado-vehiculos" onClick={handleClickSubMenu}>Lavado de Vehiculos</Link>
-                        <Link to="king-clean/lavado-alfombras" onClick={handleClickSubMenu}>Lavado de Alfombras</Link>
-                        <Link to="king-clean/lavado-sillas" onClick={handleClickSubMenu}>Lavado de Sillas</Link>
+                        <Link to="lavado-muebles" onClick={handleClickSubMenu}>Lavado de Muebles</Link>
+                        <Link to="lavado-colchones" onClick={handleClickSubMenu}>Lavado de Colchones</Link>
+                        <Link to="lavado-vehiculos" onClick={handleClickSubMenu}>Lavado de Vehiculos</Link>
+                        <Link to="lavado-alfombras" onClick={handleClickSubMenu}>Lavado de Alfombras</Link>
+                        <Link to="lavado-sillas" onClick={handleClickSubMenu}>Lavado de Sillas</Link>
                     </div>
                     <Link 
-                        to="king-clean/testimonios" 
+                        to="testimonios" 
                         onClick={handleMenu}
                     >Testimonios</Link>
                     <Link 
-                        to="king-clean/contactos" 
+                        to="contactos" 
                         onClick={handleMenu}
                     >Contactos</Link>
                 </div>

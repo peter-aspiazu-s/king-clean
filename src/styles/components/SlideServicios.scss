@@ -120,9 +120,35 @@
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1100px){
     .swiper-container{
 
+        .swiper__img{
+        
+            img{
+                width: 68vw;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .swiper-container{
+        height: 80vh;
+        .swiper__img{
+        
+            img{
+                width: 68vw;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .swiper-container{
+        height: 85vh;
         .swiper__img{
         
             img{
