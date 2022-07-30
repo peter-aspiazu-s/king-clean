@@ -135,6 +135,7 @@ body {
     width: 100%
 }
 
+.menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .nav-activo,
 .menu-navegacion .menu-navegacion__menu .menu-navegacion__ul a:hover {
     background-color: #fff;
     color: #00dd93;
@@ -153,12 +154,22 @@ body {
     width: 100%
 }
 
+.menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .item-activo,
 .menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .item-servicios:hover {
     background-color: #fff;
     color: #00dd93;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     transition: all .3s
+}
+
+.menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .item-activo {
+    border: 1px solid #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%
 }
 
 .menu-navegacion .menu-navegacion__menu .hidden-menu,
@@ -219,6 +230,7 @@ body {
         border: 0
     }
 
+    .menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .item-activo,
     .menu-navegacion .menu-navegacion__menu .menu-navegacion__ul .item-servicios {
         border: 0;
         display: inline
@@ -318,6 +330,12 @@ body {
     transition: transform .3s, -webkit-transform .3s
 }
 
+@media screen and (min-width:400px) {
+    .swiper-container {
+        height: 60vh
+    }
+}
+
 @media screen and (min-width:500px) {
     .swiper-container .swiper__img img {
         height: 270px;
@@ -331,7 +349,7 @@ body {
 
 @media screen and (min-width:600px) {
     .swiper-container {
-        height: 60vh
+        height: 70vh
     }
 
     .swiper-container .swiper__img img {
@@ -340,10 +358,6 @@ body {
 }
 
 @media screen and (min-width:700px) {
-    .swiper-container {
-        height: 70vh
-    }
-
     .swiper-container .swiper__img img {
         height: 320px
     }
@@ -354,6 +368,10 @@ body {
 }
 
 @media screen and (min-width:800px) {
+    .swiper-container {
+        height: 80vh
+    }
+
     .swiper-container .swiper__img img {
         width: 80vw
     }
@@ -380,6 +398,10 @@ body {
 }
 
 @media screen and (min-width:1100px) {
+    .swiper-container {
+        height: 90vh
+    }
+
     .swiper-container .swiper__img img {
         height: auto;
         width: 68vw
@@ -387,10 +409,6 @@ body {
 }
 
 @media screen and (min-width:1200px) {
-    .swiper-container {
-        height: 80vh
-    }
-
     .swiper-container .swiper__img img {
         height: auto;
         width: 68vw
@@ -398,13 +416,20 @@ body {
 }
 
 @media screen and (min-width:1300px) {
+    .swiper-container .swiper__img img {
+        height: auto;
+        width: 68vw
+    }
+}
+
+@media screen and (min-width:1400px) {
     .swiper-container {
-        height: 85vh
+        height: 100vh
     }
 
     .swiper-container .swiper__img img {
         height: auto;
-        width: 68vw
+        width: 1000px
     }
 }
 
@@ -833,8 +858,9 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
-    padding: 20px
+    padding: 0 20px
 }
 
 .resumen-empresa h3 {
@@ -865,15 +891,11 @@ body {
 
 @media screen and (min-width:400px) {
     .resumen-empresa {
-        padding: 30px 20px
+        padding: 0 20px
     }
 }
 
 @media screen and (min-width:500px) {
-    .resumen-empresa {
-        padding: 40px 20px
-    }
-
     .resumen-empresa h3 {
         font-size: 25px
     }
@@ -881,15 +903,11 @@ body {
 
 @media screen and (min-width:600px) {
     .resumen-empresa {
-        padding: 50px 30px
+        padding: 0 30px
     }
 }
 
 @media screen and (min-width:700px) {
-    .resumen-empresa {
-        padding: 50px 30px
-    }
-
     .resumen-empresa h3 {
         font-size: 30px
     }
@@ -901,10 +919,9 @@ body {
     .resumen-empresa a {
         font-size: 20px
     }
+}
 
-    .resumen-empresa {
-        padding: 80px 30px
-    }
+@media screen and (min-width:800px) {
 
     .resumen-empresa h3,
     .resumen-empresa p {
@@ -917,9 +934,6 @@ body {
 }
 
 @media screen and (min-width:900px) {
-    .resumen-empresa {
-        padding: 100px 30px
-    }
 
     .resumen-empresa h3,
     .resumen-empresa p {
@@ -1026,8 +1040,9 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
-    padding: 20px
+    padding: 0 20px
 }
 
 .resumen-testimonio h3 {
@@ -1056,17 +1071,7 @@ body {
     transition: all .3s
 }
 
-@media screen and (min-width:400px) {
-    .resumen-testimonio {
-        padding: 30px 20px
-    }
-}
-
 @media screen and (min-width:500px) {
-    .resumen-testimonio {
-        padding: 40px 20px
-    }
-
     .resumen-testimonio h3 {
         font-size: 25px
     }
@@ -1074,15 +1079,11 @@ body {
 
 @media screen and (min-width:600px) {
     .resumen-testimonio {
-        padding: 50px 30px
+        padding: 0 30px
     }
 }
 
 @media screen and (min-width:700px) {
-    .resumen-testimonio {
-        padding: 50px 30px
-    }
-
     .resumen-testimonio h3 {
         font-size: 30px
     }
@@ -1094,10 +1095,9 @@ body {
     .resumen-testimonio a {
         font-size: 20px
     }
+}
 
-    .resumen-testimonio {
-        padding: 80px 30px
-    }
+@media screen and (min-width:800px) {
 
     .resumen-testimonio h3,
     .resumen-testimonio p {
@@ -1110,9 +1110,6 @@ body {
 }
 
 @media screen and (min-width:900px) {
-    .resumen-testimonio {
-        padding: 100px 30px
-    }
 
     .resumen-testimonio h3,
     .resumen-testimonio p {
@@ -1330,8 +1327,9 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
-    padding: 20px
+    padding: 0 20px
 }
 
 .resumen-contactos h3 {
@@ -1360,17 +1358,7 @@ body {
     transition: all .3s
 }
 
-@media screen and (min-width:400px) {
-    .resumen-contactos {
-        padding: 30px 20px
-    }
-}
-
 @media screen and (min-width:500px) {
-    .resumen-contactos {
-        padding: 40px 20px
-    }
-
     .resumen-contactos h3 {
         font-size: 25px
     }
@@ -1378,15 +1366,11 @@ body {
 
 @media screen and (min-width:600px) {
     .resumen-contactos {
-        padding: 50px 30px
+        padding: 0 30px
     }
 }
 
 @media screen and (min-width:700px) {
-    .resumen-contactos {
-        padding: 50px 30px
-    }
-
     .resumen-contactos h3 {
         font-size: 30px
     }
@@ -1398,10 +1382,9 @@ body {
     .resumen-contactos a {
         font-size: 20px
     }
+}
 
-    .resumen-contactos {
-        padding: 80px 30px
-    }
+@media screen and (min-width:800px) {
 
     .resumen-contactos h3,
     .resumen-contactos p {
@@ -1414,9 +1397,6 @@ body {
 }
 
 @media screen and (min-width:900px) {
-    .resumen-contactos {
-        padding: 100px 30px
-    }
 
     .resumen-contactos h3,
     .resumen-contactos p {
@@ -1518,8 +1498,9 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
-    padding: 20px
+    padding: 0 20px
 }
 
 .resumen-lavado-muebles h3 {
@@ -1548,17 +1529,7 @@ body {
     transition: all .3s
 }
 
-@media screen and (min-width:400px) {
-    .resumen-lavado-muebles {
-        padding: 30px 20px
-    }
-}
-
 @media screen and (min-width:500px) {
-    .resumen-lavado-muebles {
-        padding: 40px 20px
-    }
-
     .resumen-lavado-muebles h3 {
         font-size: 25px
     }
@@ -1566,15 +1537,11 @@ body {
 
 @media screen and (min-width:600px) {
     .resumen-lavado-muebles {
-        padding: 50px 30px
+        padding: 0 30px
     }
 }
 
 @media screen and (min-width:700px) {
-    .resumen-lavado-muebles {
-        padding: 50px 30px
-    }
-
     .resumen-lavado-muebles h3 {
         font-size: 30px
     }
@@ -1586,10 +1553,9 @@ body {
     .resumen-lavado-muebles a {
         font-size: 20px
     }
+}
 
-    .resumen-lavado-muebles {
-        padding: 80px 30px
-    }
+@media screen and (min-width:800px) {
 
     .resumen-lavado-muebles h3,
     .resumen-lavado-muebles p {
@@ -1602,9 +1568,6 @@ body {
 }
 
 @media screen and (min-width:900px) {
-    .resumen-lavado-muebles {
-        padding: 100px 30px
-    }
 
     .resumen-lavado-muebles h3,
     .resumen-lavado-muebles p {
@@ -1620,6 +1583,7 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    height: auto;
     justify-content: center;
     padding: 20px
 }
@@ -1652,15 +1616,12 @@ body {
 
 @media screen and (min-width:400px) {
     .resumen-lavado-colchones {
-        padding: 30px 20px
+        height: 100vh;
+        padding: 0 20px
     }
 }
 
 @media screen and (min-width:500px) {
-    .resumen-lavado-colchones {
-        padding: 40px 20px
-    }
-
     .resumen-lavado-colchones h3 {
         font-size: 25px
     }
@@ -1668,15 +1629,11 @@ body {
 
 @media screen and (min-width:600px) {
     .resumen-lavado-colchones {
-        padding: 50px 30px
+        padding: 0 30px
     }
 }
 
 @media screen and (min-width:700px) {
-    .resumen-lavado-colchones {
-        padding: 50px 30px
-    }
-
     .resumen-lavado-colchones h3 {
         font-size: 30px
     }
@@ -1688,10 +1645,9 @@ body {
     .resumen-lavado-colchones a {
         font-size: 20px
     }
+}
 
-    .resumen-lavado-colchones {
-        padding: 80px 30px
-    }
+@media screen and (min-width:800px) {
 
     .resumen-lavado-colchones h3,
     .resumen-lavado-colchones p {
@@ -1704,9 +1660,6 @@ body {
 }
 
 @media screen and (min-width:900px) {
-    .resumen-lavado-colchones {
-        padding: 100px 30px
-    }
 
     .resumen-lavado-colchones h3,
     .resumen-lavado-colchones p {
@@ -1722,8 +1675,9 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
-    padding: 20px
+    padding: 0 20px
 }
 
 .resumen-lavado-vehiculos h3 {
@@ -1753,17 +1707,7 @@ body {
     transition: all .3s
 }
 
-@media screen and (min-width:400px) {
-    .resumen-lavado-vehiculos {
-        padding: 30px 20px
-    }
-}
-
 @media screen and (min-width:500px) {
-    .resumen-lavado-vehiculos {
-        padding: 40px 20px
-    }
-
     .resumen-lavado-vehiculos h3 {
         font-size: 25px
     }
@@ -1771,15 +1715,11 @@ body {
 
 @media screen and (min-width:600px) {
     .resumen-lavado-vehiculos {
-        padding: 50px 30px
+        padding: 0 30px
     }
 }
 
 @media screen and (min-width:700px) {
-    .resumen-lavado-vehiculos {
-        padding: 50px 30px
-    }
-
     .resumen-lavado-vehiculos h3 {
         font-size: 30px
     }
@@ -1791,10 +1731,9 @@ body {
     .resumen-lavado-vehiculos a {
         font-size: 20px
     }
+}
 
-    .resumen-lavado-vehiculos {
-        padding: 80px 30px
-    }
+@media screen and (min-width:800px) {
 
     .resumen-lavado-vehiculos h3,
     .resumen-lavado-vehiculos p {
@@ -1807,9 +1746,6 @@ body {
 }
 
 @media screen and (min-width:900px) {
-    .resumen-lavado-vehiculos {
-        padding: 100px 30px
-    }
 
     .resumen-lavado-vehiculos h3,
     .resumen-lavado-vehiculos p {
@@ -1825,8 +1761,9 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
-    padding: 20px
+    padding: 0 20px
 }
 
 .resumen-lavado-alfombras h3 {
@@ -1856,17 +1793,7 @@ body {
     transition: all .3s
 }
 
-@media screen and (min-width:400px) {
-    .resumen-lavado-alfombras {
-        padding: 30px 20px
-    }
-}
-
 @media screen and (min-width:500px) {
-    .resumen-lavado-alfombras {
-        padding: 40px 20px
-    }
-
     .resumen-lavado-alfombras h3 {
         font-size: 25px
     }
@@ -1874,15 +1801,11 @@ body {
 
 @media screen and (min-width:600px) {
     .resumen-lavado-alfombras {
-        padding: 50px 30px
+        padding: 0 30px
     }
 }
 
 @media screen and (min-width:700px) {
-    .resumen-lavado-alfombras {
-        padding: 50px 30px
-    }
-
     .resumen-lavado-alfombras h3 {
         font-size: 30px
     }
@@ -1894,10 +1817,9 @@ body {
     .resumen-lavado-alfombras a {
         font-size: 20px
     }
+}
 
-    .resumen-lavado-alfombras {
-        padding: 80px 30px
-    }
+@media screen and (min-width:800px) {
 
     .resumen-lavado-alfombras h3,
     .resumen-lavado-alfombras p {
@@ -1910,9 +1832,6 @@ body {
 }
 
 @media screen and (min-width:900px) {
-    .resumen-lavado-alfombras {
-        padding: 100px 30px
-    }
 
     .resumen-lavado-alfombras h3,
     .resumen-lavado-alfombras p {
@@ -1928,6 +1847,7 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    height: 650px;
     justify-content: center;
     padding: 20px
 }
@@ -1961,15 +1881,12 @@ body {
 
 @media screen and (min-width:400px) {
     .resumen-lavado-sillas {
-        padding: 30px 20px
+        height: 100vh;
+        padding: 0 20px
     }
 }
 
 @media screen and (min-width:500px) {
-    .resumen-lavado-sillas {
-        padding: 40px 20px
-    }
-
     .resumen-lavado-sillas h3 {
         font-size: 25px
     }
@@ -1977,15 +1894,11 @@ body {
 
 @media screen and (min-width:600px) {
     .resumen-lavado-sillas {
-        padding: 50px 30px
+        padding: 0 30px
     }
 }
 
 @media screen and (min-width:700px) {
-    .resumen-lavado-sillas {
-        padding: 50px 30px
-    }
-
     .resumen-lavado-sillas h3 {
         font-size: 30px
     }
@@ -1997,10 +1910,9 @@ body {
     .resumen-lavado-sillas a {
         font-size: 20px
     }
+}
 
-    .resumen-lavado-sillas {
-        padding: 80px 30px
-    }
+@media screen and (min-width:800px) {
 
     .resumen-lavado-sillas h3,
     .resumen-lavado-sillas p {
@@ -2013,9 +1925,6 @@ body {
 }
 
 @media screen and (min-width:900px) {
-    .resumen-lavado-sillas {
-        padding: 100px 30px
-    }
 
     .resumen-lavado-sillas h3,
     .resumen-lavado-sillas p {
@@ -2493,4 +2402,4 @@ button.swiper-pagination-bullet {
     display: none
 }
 
-/*# sourceMappingURL=main.b4c94c8d.css.map*/
+/*# sourceMappingURL=main.89daf3c5.css.map*/

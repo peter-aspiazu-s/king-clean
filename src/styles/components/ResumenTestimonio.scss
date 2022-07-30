@@ -6,8 +6,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0px 20px;
     color: white;
+    height: 100vh;
 
     h3{
         margin-bottom: 20px;
@@ -32,16 +33,8 @@
     }
 }
 
-
-@media screen and (min-width: 400px){
-    .resumen-testimonio{
-        padding: 30px 20px;
-    }
-}
-
 @media screen and (min-width: 500px){
     .resumen-testimonio{
-        padding: 40px 20px;
 
         h3{
             font-size: 25px;
@@ -51,13 +44,12 @@
 
 @media screen and (min-width: 600px){
     .resumen-testimonio{
-        padding: 50px 30px;
+        padding: 0px 30px;
     }
 }
 
 @media screen and (min-width: 700px){
     .resumen-testimonio{
-        padding: 50px 30px;
 
         h3{
             font-size: 30px;
@@ -71,9 +63,8 @@
     }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 800px){
     .resumen-testimonio{
-        padding: 80px 30px;
 
         h3, p{
             margin-bottom: 30px;
@@ -86,7 +77,6 @@
 
 @media screen and (min-width: 900px){
     .resumen-testimonio{
-        padding: 100px 30px;
 
         h3, p{
             margin-bottom: 40px;

@@ -8,6 +8,7 @@
     align-items: center;
     padding: 20px;
     color: white;
+    height: 650px;
 
     h3{
         margin-bottom: 20px;
@@ -36,13 +37,13 @@
 
 @media screen and (min-width: 400px){
     .resumen-lavado-sillas{
-        padding: 30px 20px;
+        padding: 0px 20px;
+        height: 100vh;
     }
 }
 
 @media screen and (min-width: 500px){
     .resumen-lavado-sillas{
-        padding: 40px 20px;
 
         h3{
             font-size: 25px;
@@ -52,13 +53,12 @@
 
 @media screen and (min-width: 600px){
     .resumen-lavado-sillas{
-        padding: 50px 30px;
+        padding: 0px 30px;
     }
 }
 
 @media screen and (min-width: 700px){
     .resumen-lavado-sillas{
-        padding: 50px 30px;
 
         h3{
             font-size: 30px;
@@ -72,9 +72,8 @@
     }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 800px){
     .resumen-lavado-sillas{
-        padding: 80px 30px;
 
         h3, p{
             margin-bottom: 30px;
@@ -87,7 +86,6 @@
 
 @media screen and (min-width: 900px){
     .resumen-lavado-sillas{
-        padding: 100px 30px;
 
         h3, p{
             margin-bottom: 40px;

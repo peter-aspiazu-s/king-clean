@@ -58,6 +58,12 @@
                 background-color: white;
                 transition: all .3s;
             }
+            .nav-activo{
+                transform: scale(1.1);
+                color: #00dd93;
+                background-color: white;
+                transition: all .3s;
+            }
             .item-servicios{
                 text-align: center;
                 padding: 10px 20px;
@@ -72,6 +78,18 @@
                 color: #00dd93;
                 background-color: white;
                 transition: all .3s;
+            }
+            .item-activo{
+                text-align: center;
+                padding: 10px 20px;
+                width: 100%;
+                border: 1px solid white;
+                transform: scale(1.1);
+                color: #00dd93;
+                background-color: white;
+                transition: all .3s;
+                text-decoration: underline;
+                cursor: pointer;
             }
         }
         .hidden-menu {
@@ -142,6 +160,10 @@
                     border: 0;
                 }
                 .item-servicios{
+                    border: 0;
+                    display: inline;
+                }
+                .item-activo{
                     border: 0;
                     display: inline;
                 }

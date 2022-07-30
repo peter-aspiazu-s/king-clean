@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import { Inicio } from "../Inicio"
 import { BarraSuperior } from "../components/BarraSuperior"
 import { Footer } from "../components/Footer"
@@ -14,9 +14,9 @@ import { LavadoAlfombras } from "../LavadoAlfombras"
 import { LavadoSillas } from "../LavadoSillas"
 
 export const AppRouter = () => {
+
     return(
         <HashRouter>
-        {/* <BrowserRouter> */}
             <BarraSuperior />
             <MenuNavegacion />
 
@@ -34,7 +34,6 @@ export const AppRouter = () => {
 
             <BotonWhatsapp />
             <Footer />
-        {/* </BrowserRouter> */}
         </HashRouter>
     )
 }

@@ -1,6 +1,14 @@
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const SeccionServicios = () => {
+
+    let location = useLocation();
+    const [pathName, setPathName] = useState()
+
+    useEffect(() => {
+        setPathName(location.pathname)
+    }, [location])
 
     let navigate = useNavigate();
 
@@ -28,46 +36,61 @@ export const SeccionServicios = () => {
         <div className="seccion-servicios">
             <h3 className="seccion-servicios__title">Acceso Rápido a Servicios</h3>
             <div className="seccion-servicios__container">
-                <div className="seccion-servicios__servicio">
-                    <h3>Lavado de Muebles</h3>
-                    <img src="./assets/img/limpieza-muebles-img.webp" />
-                    <a 
-                        data-servicios="muebles"
-                        onClick={handleClickRedirec}
-                    >Ver Más</a>
-                </div>
-                <div className="seccion-servicios__servicio">
-                    <h3>Lavado de Colchones</h3>
-                    <img src="./assets/img/limpieza-colchones-img.webp" />
-                    <a
-                        data-servicios="colchones"
-                        onClick={handleClickRedirec}
-                    >Ver Más</a>
-                </div>
-                <div className="seccion-servicios__servicio">
-                    <h3>Lavado de Vehículos</h3>
-                    <img src="./assets/img/limpieza-vehiculos-img.webp" />
-                    <a
-                        data-servicios="vehiculos"
-                        onClick={handleClickRedirec}
-                    >Ver Más</a>
-                </div>
-                <div className="seccion-servicios__servicio">
-                    <h3>Lavado de Alfombras</h3>
-                    <img src="./assets/img/limpieza-alfombras-img.webp" />
-                    <a
-                        data-servicios="alfombras"
-                        onClick={handleClickRedirec}
-                    >Ver Más</a>
-                </div>
-                <div className="seccion-servicios__servicio">
-                    <h3>Lavado de Sillas</h3>
-                    <img src="./assets/img/limpieza-sillas-img.webp" />
-                    <a
-                        data-servicios="sillas"
-                        onClick={handleClickRedirec}
-                    >Ver Más</a>
-                </div>
+                {
+                    (pathName !== '/lavado-muebles') &&
+                    <div className="seccion-servicios__servicio">
+                        <h3>Lavado de Muebles</h3>
+                        <img src="./assets/img/limpieza-muebles-img.webp" />
+                        <a 
+                            data-servicios="muebles"
+                            onClick={handleClickRedirec}
+                        >Ver Más</a>
+                    </div>
+                }
+                {
+                    (pathName !== '/lavado-colchones') &&
+                    <div className="seccion-servicios__servicio">
+                        <h3>Lavado de Colchones</h3>
+                        <img src="./assets/img/limpieza-colchones-img.webp" />
+                        <a
+                            data-servicios="colchones"
+                            onClick={handleClickRedirec}
+                        >Ver Más</a>
+                    </div>
+                }
+                {
+                    (pathName !== '/lavado-vehiculos') &&
+                    <div className="seccion-servicios__servicio">
+                        <h3>Lavado de Vehículos</h3>
+                        <img src="./assets/img/limpieza-vehiculos-img.webp" />
+                        <a
+                            data-servicios="vehiculos"
+                            onClick={handleClickRedirec}
+                        >Ver Más</a>
+                    </div>
+                }
+                {
+                    (pathName !== '/lavado-alfombras') &&
+                    <div className="seccion-servicios__servicio">
+                        <h3>Lavado de Alfombras</h3>
+                        <img src="./assets/img/limpieza-alfombras-img.webp" />
+                        <a
+                            data-servicios="alfombras"
+                            onClick={handleClickRedirec}
+                        >Ver Más</a>
+                    </div>
+                }
+                {
+                    (pathName !== '/lavado-sillas') &&
+                    <div className="seccion-servicios__servicio">
+                        <h3>Lavado de Sillas</h3>
+                        <img src="./assets/img/limpieza-sillas-img.webp" />
+                        <a
+                            data-servicios="sillas"
+                            onClick={handleClickRedirec}
+                        >Ver Más</a>
+                    </div>
+                }
                 
             </div>
         </div>

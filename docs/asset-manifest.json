@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b4c94c8d.css",
-    "main.js": "/static/js/main.448e95c3.js",
+    "main.css": "/static/css/main.89daf3c5.css",
+    "main.js": "/static/js/main.a8846b33.js",
     "static/media/alfombras-fondo.webp": "/static/media/alfombras-fondo.65b765ada78c9f10773f.webp",
     "static/media/fondo-azul.webp": "/static/media/fondo-azul.3c4ccf453070f92b7905.webp",
     "static/media/muebles-fondo.webp": "/static/media/muebles-fondo.c5ca1a429c70e123443e.webp",
@@ -12,11 +12,11 @@
     "static/media/colchones-fondo.webp": "/static/media/colchones-fondo.e2868f1c39300a52c7cc.webp",
     "static/media/contactos-fondo.webp": "/static/media/contactos-fondo.b4b3048344ea7829994e.webp",
     "index.html": "/index.html",
-    "main.b4c94c8d.css.map": "/static/css/main.b4c94c8d.css.map",
-    "main.448e95c3.js.map": "/static/js/main.448e95c3.js.map"
+    "main.89daf3c5.css.map": "/static/css/main.89daf3c5.css.map",
+    "main.a8846b33.js.map": "/static/js/main.a8846b33.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4c94c8d.css",
-    "static/js/main.448e95c3.js"
+    "static/css/main.89daf3c5.css",
+    "static/js/main.a8846b33.js"
   ]
 }
